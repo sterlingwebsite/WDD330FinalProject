@@ -12,7 +12,8 @@ function isToday(dateString) {
 }
 
 async function fetchLocalQuote() {
-  // I wish I could use this because the author may update it with additional or more correct quotes.
+  // I wish I could use this because the author may update it with additional or more correct quotes, 
+  // but I can't because it goes over my assignment 500 kB network transferred limit.
   // Maybe I'll refresh my quotes.json every once in a while.
   // const remoteUrl =
   //   "https://raw.githubusercontent.com/JamesFT/Database-Quotes-JSON/master/quotes.json";
