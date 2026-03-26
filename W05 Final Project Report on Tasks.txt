@@ -1,0 +1,4 @@
+Task: Setup and Project Structure, API Integration: ZenQuotes,
+Source: https://github.com/my-final-project/input.html
+Site: https://my-final-project.github.io/input.html
+Trello Board: https://trello.com/b/0vqZuHcu/wdd330-final-project

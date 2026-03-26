@@ -1,0 +1,31 @@
+Idea 1
+Pokemon ROM-Hacking Companion App
+A tool that helps the user explore Pokemon Emerald data.
+APIs
+PokeAPI
+PokeAPI Graph QL
+GitHub Raw Content API
+
+Idea 2
+Video Game Database Explorer
+A searchable game encyclopedia with screenshots, genres, platforms, and trailers
+APIs
+RAWG Video Games Database API
+IGDB API
+YouTube Data API
+
+Idea 3
+Scripture Study and Inspiration App
+A tool that pulls scriptures, quotes, and daily inspiration
+APIs
+The Church of Jesus Christ of Latter-day Saints API
+ZenQuotes API
+Unsplash API
+
+Idea 4
+Productivity Dashboard / Habit Tracker
+A customizable dashboard with daily info, quotes, images, and habit tracking
+APIs
+ZenQuotes API
+Unsplash API
+WorldTimeAPI

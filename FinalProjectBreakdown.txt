@@ -1,0 +1,153 @@
+W07 Assignment: Skills Development Document and Video
+Due Apr 15 by 5:59pm Points 100 Submitting a file upload Attempts 0 Allowed Attempts 3 Available until Apr 16 at 5:59pm
+Overview
+Purpose: Articulate and demonstrate your mastery of the course outcome for web frontend development skills
+Task: Finish and submit your skill assessment document and your summary video.
+Instructions
+Follow the instructions for the Final Project SubmissionLinks to an external site. to complete your skills development documents.
+Record a video that demonstrates the code you highlighted in your document.
+Include your video link in the document and ensure it can be seen by the grader.
+Include your application link in the document and ensure it can be seen by the grader.
+Upload your skills assessment document.
+1. JavaScript
+25 pts
+Complete
+Robust programming logic was demonstrated including multiple examples of non-trivial work most likely outside the bounds of the given examples in the course. JS was used to dynamically create a web application from JSON data retrieved from a third-party API.
+2. Third-party APIs
+25 pts
+Complete
+Extensive use of API(s) was used effectively to produce a rich experience, including 2 or more unique endpoints.
+3. JSON
+10 pts
+Complete
+Extensive use of non-trivial JSON data to provide a dynamic website experience. Required: arrays of JSON data with 8+ unique attributes.
+4. Advanced CSS
+10 pts
+Complete
+Advanced features of CSS were used in 4+ places and evident. Advanced features include: animations, transitions, card flips, hover events.
+5. Events
+10 pts
+Complete
+Five or more events were used to produce a responsive experience.
+6. LocalStorage Used Effectively
+5 pts
+Complete
+Local storage was used to save and retrieve multiple (3-5) properties to enhance the site experience.
+7. Trello Board
+5 pts
+Complete
+The student's project Trello board was provided and demonstrates evidence of use with tasks.
+8. Video
+10 pts
+Complete
+The student's video is about 5 minutes long, shows the student face, and demonstrates the functionality of their application.
+
+W07 Final Project: Submission
+Overview
+Finish the development of your final web application project and submit your Professional and Skill Development documents. You will also create a video highlighting the work listed in your documents and in your project.
+
+Instructions
+Project
+Complete the development of your web application project.
+Deploy your working application and verify that it is running and can be accessed publicly.
+Update your Trello board showing your progress and the state of the project. You may have not finished all the tasks but that may be OK given the scope of the assessment of learning.
+Development Documentation
+Review your Professional Development and Skills Development documents.
+These are the two documents that you downloaded in first weeks of the course and have been adding to throughout the course.
+Professional and Skills Development Documents (Step 1)
+
+List any additional work completed in the appropriate locations on the given tables in the documents.
+Ensure that the provided tables contain all the work you used to demonstrate your mastery of the course learning outcomes.
+Check links that you have provided. They all must be working and render publicly.
+Create a Video
+Create a video demonstrating your working application.
+
+The video should be approximately 5 minutes long.
+Use screen recording software to capture your screen. Do not use a mobile phone. (Recommended tool: Loom)
+Include your face in the recording, at least at the beginning of the video.
+Demonstrate your application running in the browser and discuss the code as it executes.
+Publish your video using a hosting platform of your choice, such as YouTube or Loom.
+Your hosted video must be public in order for the grader(s) and instructor to have access. You can test this yourself by opening an "incognito" or private browser window and navigating to your video link to make sure it is public.
+
+Update Links
+In the Skills document, insert the following information where indicated:
+
+your full name
+a URL link to your working/rendered application (typically Netlify or github.io (Pages)
+web application source URL (typically github.com)
+your project Trello board URL
+Submission
+Once you have completed the two documents and the video as described above, return to Canvas to upload the documents where indicated.
+
+W07 Final Project: Requirements
+Description
+Your web application project provides you with the opportunity to demonstrate your understanding of the concepts and skills that you have developed in the course. This page outlines the requirements for your final web application project. You'll be building and deploying a fully functional web application using HTML, CSS, and vanilla JavaScript (no frameworks or libraries allowed).
+
+Requirements
+The following is a list of requirements for the project:
+
+The technology stack is HTML, CSS, and vanilla JavaScript.
+It is OK to use a CSS responsive framework and CSS libraries for your web application project.
+
+You may NOT use any JS framework or library.
+
+Use at least two (2) external third-party API.
+One of those third-party APIs cannot be OpenWeatherMap.
+
+All exposed features are operational.
+Be a combination of static and dynamically generated markup.
+Incorporate CSS animation.
+The code must be clean, well-commented, and organized. Show a good organization (ES Modules, classes, etc).
+The code is error free (according to ESLint rules).
+The application meets web frontend development standards using valid, contemporary HTML and CSS. There are no accessibility errors and the pages follow best practices and basic SEO recommendations.
+
+WDD Frontend Development Standards
+Overview
+Web frontend development standards ensure that web applications are built with consistency, quality, and best practices in mind. Adhering to these standards helps create a cohesive user experience, improves maintainability, and enhances performance across different browsers and devices. By following established guidelines for HTML, CSS, and JavaScript, developers can ensure that their code is clean, efficient, and accessible to all users. These standards also promote collaboration among development teams, making it easier to work together on projects and share codebases.
+
+Many of these development standards are modeled after The Front-End Checklist by David Dias.
+Most supplemental references are to MDN Web Docs sources.
+✅ Checklist
+All folders and files follow the naming convention rules which include lowercase only, no spaces, and are meaningful (semantic).
+The Document Type declaration <!doctype html> is located at the top of the HTML document.
+The html element lang attribute <html lang="en-US"> is provided.
+Head
+Meta Charset Attribute is used. <meta charset="utf-8">
+Meta Viewport Element <meta name="viewport" content="width=device-width, initial-scale=1">
+The viewport of the browser is the viewable area. The content of rendered web document most likely is not the same size, therefore, scroll bars are provided by the browser. The viewport meta element considers the device width and scales the content the best it can for a given viewport. Setting the viewport to consider the device or user agent supports responsive design.
+
+width=device-width sets the width of the viewport to the width of the device.
+initial-scale=1 sets the initial zoom level when the user visits the page.
+Title Element
+Meta Description Element
+Meta Author Element
+Eternal CSS file references are used and in the proper order
+HTML
+HTML is W3C compliant. W3C validator
+Semantic Elements are used. Why? is this important
+No broken links are found on the page. W3C Link Checker
+CSS
+CSS is W3C compliant – W3C validator
+Unique ID selectors – if an ID selector is used, it is unique to a page (the planned use of class selector is preferred)
+JavaScript
+No errors nor references to unused JavaScript functions.
+No output to the console in the published version of the page.
+Other
+Images are optimized to fit the design needs of the site.
+Image aspect ratios are not changed for any images.
+Every image has an alt attribute assigned and it is relevant in describing the non-decorative image.
+A heading <h1> is required and there is only one instance on a document.
+The <h1> heading should accurately represents the main topic or purpose of the page and match very closely with the content of the document's <title> It should succinctly summarize the content and provide a clear indication of what the page is about. While <h1> headings can be styled using CSS for visual hierarchy, their primary purpose is to provide semantic meaning to the content.
+
+Headings <h1>-<h6> are used in the proper order to outline the page.
+Use heading elements (<h2> to <h6>) to create a logical hierarchy of content. Headings should be nested appropriately to reflect the structure and relationship between different sections of the page. – Heading Levels Deque University
+
+No color contrast violations at the AA level. Use the browser's development tool (DevTools) CSS Overview, or use a tool like siegemedia's Contrast Checker to check color contrast.
+Ensure that the page's weight remains under 500KB as measured by the DevTools network transfer load indicator.
+Adhere to design principles such as alignment, proximity, contrast, repetition, and usable typography.
+Maintain an appealing visual appearance across all pages, ensuring responsiveness, uniformity, and consistency.
+Guarantee the absence of spelling and grammatical errors throughout the site.
+Test all pages for responsive web design, ensuring appropriately sized text and links, with no horizontal scrolling nor dead space.
+Verify that the page functions correctly and delivers content as expected.
+Accessibility test errors and warnings are reviewed
+Do not use third-party CSS frameworks or libraries unless directed that they are allowed.

@@ -1,0 +1,79 @@
+Personal Development Outcomes (my self-assessment)
+Rating 3 - Mastery, Above and Beyond
+
+Examples:
+
+Week 1
+I mixed up the time for our team meeting--so the meeting didn't happen. People were still trying to decide which group they wanted to belong to. There were people moving in and out of the group I chose all week. However, I still made the effort to complete our Team Activity and reach out to each member of my group to ensure they completed it. I learned how to use Trello, created a board, sent the link to the board to each group member, and moved the cards as necessary. I also cloned the given repository to my own and completed the npm install, lint, format, run, and build commands. I also signed up for a free Render account as part of the assignment. Fortunately, I was able to do nearly all of this without too much back and forth communication with my team members. I was able to send them all the information we needed to complete the assignment in time.
+
+3/12/2026 - Week 2
+Yesterday was our second team meeting. I went through the team activity beforehand and completed all that I could do on my own to prepare for the team meeting. I contact each team member and invited them to my GitHub, and gave them links to my Trello board. I went through the Team Activity instructions and adjusted the code on my GitHub as necessary. When the team meeting came, I was able to confidently and clearly explain all that the Team Activity required. I went through the Team Activity line by line and checked in with each team member to make sure they were understanding. They asked questions at specific points and I was able to answer their questions because I had researched those concepts beforehand. Explaining the activity did well to help me understand the activity better and the JavaScript code.
+
+Week 2 - 3/12/2026
+I'm working on the W02 Individual Project. I'm choosing to work on "Empty Card Error: cart.html". The Trello card says that when the cart is empty, the cart html page has an error. As I open DevTools on the page and check out the Console tab, I can see an error.
+
+Here is the error:
+cart.js:5 
+ Uncaught TypeError: Cannot read properties of null (reading 'map')
+    at renderCartContents (cart.js:5:31)
+    at cart.js:28:1
+renderCartContents	@	cart.js:5
+(anonymous)	@	cart.js:28
+
+I'm going to try to fix this as part of this assignment.
+
+I fixed the error by handling the case where the cart is empty. When the cart had no items, getLocalStorage("so-cart") returned null, and the program tried to call .map() on that null value, which caused the crash. I updated cart.js so that if the cart is empty, cartItems becomes an empty array instead of null. This ensures .map() always runs on an array, preventing the error.
+
+Using Github is hard. commits and working with a master branch is confusing.
+
+Week 3 - 3/17/2026
+This is an summary of the work I did in week 3. I did:
+W03 Team Activity: Dynamic Header and Footer
+In this assignment, I created a dynamic header and footer by creating separate html files that only contained the header and footer. Each of the website's html documents would load the header and footer html files and use JS to replace whatever header and footer exists. This way it ensures that the header and footer remains consistent throughout the site, and has an easy location to change the header and footer sitewide.
+I also created a template--similar to the header/footer template, for the items that show up in the shopping cart, that way each item has a consistent appearance.
+
+For the:
+W03 Individual Activity: Expand Inventory
+setion, this activity was extensive, and I'm not sure I understand it entirely. It took a lot of work to make the website show the images and items from the live website. Also, this project makes the website a little more difficult to manage because it pulls data from the live website instead of a local JSON file. The live website is concealed from my so I have to trust that what the website renders is all the intended data.
+
+Additionally, I noticed that the images of the items in the cart are not rendering. I wonder if I missed something in this activity, or if this is a task to work on in a later assignment.
+
+For the:
+W03 Individual Task(s): Report
+assignment, I chose to do Discount indicator-product listing because it was at the top of the list and nearly complete already thanks to the work of Christopher Bahinting. Some of what he did in a previous activity overlapped some of the required work of this activity.
+For this activity I added a visual indicator for how much a product is discounted as long as the FinalPrice is less than the SuggestedRetailPrice. It appears that most of the items fit into this category, so most items show the discount.
+
+Week 4 - 3/17/2026
+Now I'm working on:
+W04 Individual Task(s): Report
+and I'm choosing to work on Total$ in Cart because it's required to be complete before I can begin working on the W04 Team Activity.
+
+I was able to complete it. The cart/index.html page still looks weird without the item images. I want to fix those soon.
+
+I made it possible for the webpage to show the total (of the FinalPrices) only when there are items in the cart. This completes this assignment.
+
+Now I will begin:
+W04 Team Activity: Checkout
+
+3/24/2026
+I added a checkout button to the cart that takes the user to checkout/index.html.
+I built a checkout form, and an order summary section.
+I created the CheckoutProcess class that calculates subtotal, tax, shipping, and total, displays totals in the DOM, and sends the order to the backend via POST.
+I changed ProductData to ExternalServices.
+
+Week 5 - 3/24/2026
+I completed the learning activities. I learned about closures, IIFE's, Recursion, and Callbacks. I also learned about the dataset HTML property and did a short activity that used them.
+
+I'm now working on my final project:
+W05 Final Project: Work
+I created a document that contains all the requirements of the project.
+
+3/25/2026
+I completed merging the main branch with my branches of future homework assignments I completed. I'm ready for Week 4 Team activity.
+
+I'm now continuing to work on my final project.
+
+I've completed two trello cards.
+I couldn't reach the ZenQuotes API so I had to create a JSON file with inspirational quotes from Type.fit
+
+I decided to try accessing a github file containing thousands of quotes. I'm able to access the online file from my program--so I can use any updates the author makes. I also made a copy in my program if the online fetch fails.

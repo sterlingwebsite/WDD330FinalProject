@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="29.3.4">
+  <diagram name="Page-1" id="WJeZ-NMOoOyqTL96iZHz">
+    <mxGraphModel dx="3545" dy="1950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wLs5UVb_S10-etMkQz1I-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="490" width="830" x="35" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-6" parent="1" style="shape=mxgraph.sysml.x;" value="" vertex="1">
+          <mxGeometry height="490" width="830" x="40" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=81;" value="&lt;font&gt;Daily Dashboard&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="680" x="110" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-2" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="790" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=51;" value="Quote of the Day" vertex="1">
+          <mxGeometry height="120" width="740" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=40;" value="- quote author" vertex="1">
+          <mxGeometry height="60" width="420" x="240" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=42;" value="quote text quote text quote text quote text quote text quote text quote text quote text quote text quote text quote text quote text quote text quote text quote text" vertex="1">
+          <mxGeometry height="260" width="680" x="120" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=55;" value="Current Time" vertex="1">
+          <mxGeometry height="100" width="440" x="230" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=49;" value="Date" vertex="1">
+          <mxGeometry height="85" width="320" x="290" y="745" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=52;" value="Countdown to Deadline" vertex="1">
+          <mxGeometry height="90" width="595" x="153" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="570" width="380" x="40" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="570" width="405" x="460" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=53;" value="Checklist" vertex="1">
+          <mxGeometry height="80" width="240" x="110" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=53;" value="Habits" vertex="1">
+          <mxGeometry height="80" width="180" x="572.5" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=40;" value="&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Something I need to do&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="470" width="360" x="50" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=40;" value="&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;- Habit to complete&lt;/span&gt;&lt;span style=&quot;font-size: 32px;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="470" width="360" x="480" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-18" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.home;" value="" vertex="1">
+          <mxGeometry height="63.75" width="60" x="250" y="1513.75" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-19" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.settings;" value="" vertex="1">
+          <mxGeometry height="60" width="60" x="570" y="1517.5" as="geometry" />
+        </mxCell>
+        <mxCell id="wLs5UVb_S10-etMkQz1I-20" parent="1" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.repeat;pointerEvents=1" value="" vertex="1">
+          <mxGeometry height="60.25" width="75.31" x="404.69" y="1515.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
