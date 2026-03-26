@@ -1,4 +1,7 @@
-Task: Setup and Project Structure, API Integration: ZenQuotes,
-Source: https://github.com/my-final-project/input.html
-Site: https://my-final-project.github.io/input.html
+Task: Setup and Project Structure, API Integration: JamesFT/Database-Quotes-JSON, API Integration: Unsplash
+
+Source: https://github.com/sterlingwebsite/WDD330FinalProject/blob/main/index.html
+
+Site: https://sterlingwebsite.github.io/WDD330FinalProject/
+
 Trello Board: https://trello.com/b/0vqZuHcu/wdd330-final-project

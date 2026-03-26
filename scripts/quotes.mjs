@@ -6,48 +6,48 @@ const QUOTE_DATE_KEY = "dailyQuoteDate";
 const quoteTextEl = document.querySelector(".quote-text");
 const quoteAuthorEl = document.querySelector(".quote-author");
 
-async function fetchQuote() {
-  const localUrl = "./data/quotes.json";
-  const remoteUrl =
-    "https://raw.githubusercontent.com/JamesFT/Database-Quotes-JSON/master/quotes.json";
-  // webpage: https://github.com/JamesFT/Database-Quotes-JSON/blob/master/quotes.json
-
-  try {
-    console.log("Attempting remote quote fetch...");
-    const remoteResponse = await fetch(remoteUrl, { cache: "no-store" });
-    if (remoteResponse.ok) {
-      console.log("✔ Remote quotes loaded successfully.");
-      const remoteData = await remoteResponse.json();
-      const random = remoteData[Math.floor(Math.random() * remoteData.length)];
-
-      return {
-        text: random.quoteText || random.text,
-        author: random.quoteAuthor || "Unknown",
-      };
-    }
-  } catch (err) {
-    console.warn("Remote quotes unavailable, using local file.");
-  }
-
-  try {
-    const localResponse = await fetch(localUrl);
-    const localData = await localResponse.json();
-    const random = localData[Math.floor(Math.random() * localData.length)];
-    console.log("✔ Using local quotes.json fallback.");
-
-    return {
-      text: random.quoteText,
-      author: random.quoteAuthor || "Unknown",
-    };
-  } catch (error) {
-    console.error("Error fetching quote:", error);
-    return null;
-  }
-}
-
 function isToday(dateString) {
   const today = new Date().toDateString();
   return dateString === today;
+}
+
+async function fetchLocalQuote() {
+  // I wish I could use this because the author may update it with additional or more correct quotes.
+  // Maybe I'll refresh my quotes.json every once in a while.
+  // const remoteUrl =
+  //   "https://raw.githubusercontent.com/JamesFT/Database-Quotes-JSON/master/quotes.json";
+  // webpage: https://github.com/JamesFT/Database-Quotes-JSON/blob/master/quotes.json
+  // try {
+  //   console.log("Attempting remote quote fetch...");
+  //   const remoteResponse = await fetch(remoteUrl, { cache: "no-store" });
+  //   if (remoteResponse.ok) {
+  //     console.log("✔ Remote quotes loaded successfully.");
+  //     const remoteData = await remoteResponse.json();
+  //     const random = remoteData[Math.floor(Math.random() * remoteData.length)];
+
+  //     return {
+  //       text: random.quoteText || random.text,
+  //       author: random.quoteAuthor || "Unknown",
+  //     };
+  //   }
+  // } catch (err) {
+  //   console.warn("Remote quotes unavailable, using local file.");
+  // }
+
+  try {
+    const response = await fetch("./data/quotes.json");
+    const quotes = await response.json();
+
+    const random = quotes[Math.floor(Math.random() * quotes.length)];
+
+    return {
+      text: random.quoteText || random.text,
+      author: random.quoteAuthor || "Unknown",
+    };
+  } catch (err) {
+    console.error("Error loading local quotes.json:", err);
+    return null;
+  }
 }
 
 function renderQuote(quote) {
@@ -64,7 +64,7 @@ export async function initQuotes() {
     return;
   }
 
-  const newQuote = await fetchQuote();
+  const newQuote = await fetchLocalQuote();
 
   if (newQuote) {
     renderQuote(newQuote);

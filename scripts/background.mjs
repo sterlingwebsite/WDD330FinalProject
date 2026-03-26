@@ -10,14 +10,19 @@ function isToday(dateString) {
 }
 
 async function fetchBackground() {
-  const url = "https://source.unsplash.com/1600x900/?nature";
+  console.log("Attempting Unsplash API fetch...");
+
+  const url = `https://api.unsplash.com/photos/random?query=nature&client_id=vkul2LB10bpKEeuM8I_NnzLQIuA7XxsLig3VexClEAA`;
 
   try {
-    const response = await fetch(url, { method: "HEAD" });
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Unsplash API error");
 
-    return response.url;
-  } catch (error) {
-    console.error("Background fetch failed:", error);
+    const data = await response.json();
+    return data.urls.regular + "&w=900&q=60&fm=webp";
+    // return data.urls.regular + "&q=60&auto=format";
+  } catch (err) {
+    console.error("Background fetch failed:", err);
     return null;
   }
 }

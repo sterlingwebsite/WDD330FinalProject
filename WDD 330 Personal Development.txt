@@ -77,3 +77,12 @@ I've completed two trello cards.
 I couldn't reach the ZenQuotes API so I had to create a JSON file with inspirational quotes from Type.fit
 
 I decided to try accessing a github file containing thousands of quotes. I'm able to access the online file from my program--so I can use any updates the author makes. I also made a copy in my program if the online fetch fails.
+
+3/26/2026
+I had to convert my quotes.mjs to not use a fetch from an online github file. Instead, I created a json with only 300 quotes that quotes.mjs pulls from. This is due to the online fetch costing more thant the 500 kB network transferred limit.
+
+I completed API Integration: Unsplash. I had to acquire an access key which limits me to 50 api requests per hour. Fortunately, it's free.
+I can only use images that are in webp format and less than 900 px wide to conserve the 500 kB network transferred limit.
+
+
+
