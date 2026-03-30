@@ -84,5 +84,6 @@ I had to convert my quotes.mjs to not use a fetch from an online github file. In
 I completed API Integration: Unsplash. I had to acquire an access key which limits me to 50 api requests per hour. Fortunately, it's free.
 I can only use images that are in webp format and less than 900 px wide to conserve the 500 kB network transferred limit.
 
+I spent some time merging branches on GitHub. It is quite difficult. I wonder if I can learn better ways for merging code in a team setting.
 
 
