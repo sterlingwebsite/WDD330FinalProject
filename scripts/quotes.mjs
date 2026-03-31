@@ -1,3 +1,5 @@
+// Fetch and store quotes
+
 import { storage } from "./storage.mjs";
 
 const QUOTE_KEY = "dailyQuote";

@@ -86,4 +86,7 @@ I can only use images that are in webp format and less than 900 px wide to conse
 
 I spent some time merging branches on GitHub. It is quite difficult. I wonder if I can learn better ways for merging code in a team setting.
 
+3/31/2026
+I'm still working on my FinalProject.
 
+I finished completing API Integration: WorldTimeAPI. I used RapidAPI worldtimeapi to complete it because it's supposedly faster and it gave me an api key I could use.

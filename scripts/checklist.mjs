@@ -1,3 +1,5 @@
+// Checklist logic
+
 import { storage } from "./storage.mjs";
 
 export function initChecklist() {

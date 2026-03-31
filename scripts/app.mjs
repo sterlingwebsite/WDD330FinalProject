@@ -1,16 +1,20 @@
+// Orchestrates everything
+
 import { initQuotes } from "./quotes.mjs";
 import { initBackground } from "./background.mjs";
-import { initTime } from "./time.mjs";
+import { initTime, initCountdown, setupDeadLineControls } from "./time.mjs";
 import { initHabits } from "./habits.mjs";
 import { initChecklist } from "./checklist.mjs";
 import { initSettings } from "./settings.mjs";
 import { storage } from "./storage.mjs";
-import { renderUI } from "./ui.mjs";
+import { renderUI, updateClock } from "./ui.mjs";
 
 export function initApp() {
   initQuotes();
   initBackground();
-  initTime();
+  initTime(updateClock);
+  initCountdown();
+  setupDeadLineControls();
   initHabits();
   initChecklist();
   initSettings();

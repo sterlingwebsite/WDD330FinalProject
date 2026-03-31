@@ -1,3 +1,5 @@
+// Fetch and apply background images
+
 import { storage } from "./storage.mjs";
 
 const BG_KEY = "dailyBackground";
