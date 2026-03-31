@@ -21,4 +21,4 @@ export function initApp() {
   renderUI();
 }
 
-initApp();
+document.addEventListener("DOMContentLoaded", initApp);

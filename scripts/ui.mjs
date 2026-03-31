@@ -29,3 +29,23 @@ export function updateCountdown({ days, hours, minutes, seconds }) {
 
   el.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
+
+export function renderHabits(habits, container) {
+  container.innerHTML = "";
+
+  habits.forEach(habit => {
+    const li = document.createElement("li");
+    li.classList.add("habit-item");
+
+    li.innerHTML = `
+    <label>
+      <input type="checkbox" data-id="${habit.id}" ${habit.completedToday ? "checked" : ""}>
+      <span>${habit.name}</span>
+    </label>
+    <span class="streak">🔥 ${habit.streak}</span>
+    <button class="delete-habit" data-id="${habit.id}">✖</button>
+    `;
+
+    container.appendChild(li);
+  });
+}

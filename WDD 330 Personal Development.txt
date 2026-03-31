@@ -90,3 +90,6 @@ I spent some time merging branches on GitHub. It is quite difficult. I wonder if
 I'm still working on my FinalProject.
 
 I finished completing API Integration: WorldTimeAPI. I used RapidAPI worldtimeapi to complete it because it's supposedly faster and it gave me an api key I could use.
+
+I also finished the habit tracker js. It took a while because I thought it wasn't unchecking the checkmark.
+
