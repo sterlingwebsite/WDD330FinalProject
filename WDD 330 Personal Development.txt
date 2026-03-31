@@ -94,3 +94,5 @@ I finished completing API Integration: WorldTimeAPI. I used RapidAPI worldtimeap
 I also finished the habit tracker js. It took a while because I thought it wasn't unchecking the checkmark.
 
 I finished doing the checklist. It is very similar to the habit tracker.
+
+I finished doing the customization and settings. I changed the background image to save a cached image of each image category the user chose. It only saves the default image on page load, which keeps the network transferred size to only 161 kB.
