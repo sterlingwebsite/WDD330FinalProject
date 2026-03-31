@@ -93,3 +93,4 @@ I finished completing API Integration: WorldTimeAPI. I used RapidAPI worldtimeap
 
 I also finished the habit tracker js. It took a while because I thought it wasn't unchecking the checkmark.
 
+I finished doing the checklist. It is very similar to the habit tracker.

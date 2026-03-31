@@ -1,3 +1,23 @@
+:root {
+    --accent-color: blue;
+    --bg-color: #ffffff;
+    --text-color: #222;
+}
+
+[data-theme="dark"] {
+    --bg-color: #111;
+    --text-color: #eee;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+button, input, select {
+    accent-color: var(--accent-color);
+}
+
 .background-image {
     position: fixed;
     top: 0;
