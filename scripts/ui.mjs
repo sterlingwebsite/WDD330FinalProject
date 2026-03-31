@@ -13,13 +13,13 @@ export function updateClock(dateObj) {
   timeEl.textContent = dateObj.toLocaleTimeString([], {
     hour: "2-digit",
     minute: "2-digit",
-    second: "2-digit"
+    second: "2-digit",
   });
 
   dateEl.textContent = dateObj.toLocaleDateString([], {
     weekday: "long",
     month: "long",
-    day: "numeric"
+    day: "numeric",
   });
 }
 
@@ -33,7 +33,7 @@ export function updateCountdown({ days, hours, minutes, seconds }) {
 export function renderHabits(habits, container) {
   container.innerHTML = "";
 
-  habits.forEach(habit => {
+  habits.forEach((habit) => {
     const li = document.createElement("li");
     li.classList.add("habit-item");
 
@@ -44,6 +44,27 @@ export function renderHabits(habits, container) {
     </label>
     <span class="streak">🔥 ${habit.streak}</span>
     <button class="delete-habit" data-id="${habit.id}">✖</button>
+    `;
+
+    container.appendChild(li);
+  });
+}
+
+export function renderChecklist(items, container) {
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  items.forEach((item) => {
+    const li = document.createElement("li");
+    li.classList.add("checklist-item");
+
+    li.innerHTML = `
+      <label>
+        <input type="checkbox" data-id="${item.id}" ${item.completed ? "checked" : ""}>
+        <span>${item.text}</span>
+      </label>
+      <button class="delete-task" data-id="${item.id}">✖</button>
     `;
 
     container.appendChild(li);
