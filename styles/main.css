@@ -2,11 +2,17 @@
     --accent-color: blue;
     --bg-color: #ffffff;
     --text-color: #222;
+    --overlay-color: rgba(255, 255, 255, 0.35);
 }
 
 [data-theme="dark"] {
     --bg-color: #111;
     --text-color: #eee;
+    --overlay-color: rgba(0 , 0, 0, 0.45);
+}
+
+html {
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body {
@@ -27,6 +33,16 @@ button, input, select {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.background-overlay {
+    position: absolute;
+    inset:0;
+    background: var(--overlay-color);
+    backdrop-filter: blur(2px);
     z-index: -1;
-    filter: brightness(0.7);
+    transition: background 0.4s ease;
 }

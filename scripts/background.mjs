@@ -36,6 +36,10 @@ async function fetchBackground(category) {
 
 function renderBackground(imageUrl) {
   backgroundEl.style.backgroundImage = `url('${imageUrl}')`;
+
+  requestAnimationFrame(() => {
+    backgroundEl.style.opacity = "1";
+  });
 }
 
 async function getBackgroundForCategory(category) {

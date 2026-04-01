@@ -1,0 +1,4 @@
+Task: API Integration: WorldTimeAPI, Habit Tracker, Daily Checklist, Customization and Settings.
+Source: https://github.com/sterlingwebsite/WDD330FinalProject
+Site: https://sterlingwebsite.github.io/WDD330FinalProject/
+Trello Board: https://trello.com/b/0vqZuHcu/wdd330-final-project
