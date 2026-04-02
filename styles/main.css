@@ -175,6 +175,10 @@ button:active {
   justify-content: center;
 }
 
+#settings h3 {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .dashboard {
     grid-template-columns: 1fr;
@@ -198,6 +202,7 @@ footer h2 {
   justify-content: center;
   flex-wrap: wrap;
   padding: 1rem;
+  padding-top: 0;
 }
 
 #settings h3 {
