@@ -22,43 +22,54 @@
         <div class="background-overlay"></div>
       </div>
 
-      <section id="quote">
-        <p class="quote-text"></p>
-        <p class="quote-author"></p>
-      </section>
+      <div class="dashboard">
+        <div class="left-column">
+          <section id="quote">
+            <p class="quote-text"></p>
+            <p class="quote-author"></p>
+          </section>
 
-      <!-- <section id="background"></section> -->
+          <!-- <section id="background"></section> -->
 
-      <section id="time">
-        <p class="time-display"></p>
-        <p class="date-display"></p>
+          <section id="time">
+            <p class="time-display"></p>
+            <p class="date-display"></p>
 
-        <div class="countdown-panel">
-          <input type="datetime-local" id="deadline-input" />
-          <button id="set-deadline">Set Deadline</button>
-          <p id="countdown"></p>
+            <div class="countdown-panel">
+              <input type="datetime-local" id="deadline-input" />
+              <button id="set-deadline">Set Deadline</button>
+              <p id="countdown"></p>
+            </div>
+          </section>
         </div>
-      </section>
 
-      <section id="habits">
-        <h2>Habits</h2>
-        <ul id="habit-list"></ul>
-        <button id="add-habit-btn">Add Habit</button>
-      </section>
+        <div class="right-column">
+          <section id="habits">
+            <h2>Habits</h2>
+            <ul id="habit-list"></ul>
+            <button id="add-habit-btn">Add Habit</button>
+          </section>
 
-      <section id="checklist">
-        <h2>Daily Checklist</h2>
-        <ul id="checklist-items"></ul>
-        <button id="add-task-btn">Add Task</button>
-      </section>
+          <section id="checklist">
+            <h2>Daily Checklist</h2>
+            <ul id="checklist-items"></ul>
+            <button id="add-task-btn">Add Task</button>
+          </section>
+        </div>
+      </div>
 
-      <section id="settings">
-        <h2>Settings</h2>
-        <div id="theme-toggle"></div>
-        <div id="color-options"></div>
-        <div id="background-category"></div>
+      
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section>
+        <h2>Settings</h2>
+        <div id="settings">
+          <div id="theme-toggle"></div>
+          <div id="color-options"></div>
+          <div id="background-category"></div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>

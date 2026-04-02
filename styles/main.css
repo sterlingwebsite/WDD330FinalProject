@@ -18,10 +18,58 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: Poppins, Montserrat, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 0.75rem;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+[data-theme="dark"] section {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+section:hover {
+  transform: translateY(-2px);
 }
 
 button, input, select {
     accent-color: var(--accent-color);
+}
+
+.dashboard button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: color-mix(in srgb, var(--accent-color) 80%, black);
+}
+
+button:active {
+  transform: scale(0.97);
 }
 
 .background-image {
@@ -41,8 +89,280 @@ button, input, select {
 .background-overlay {
     position: absolute;
     inset:0;
-    background: var(--overlay-color);
+    /* background: var(--overlay-color); */
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.25)
+    );
     backdrop-filter: blur(2px);
     z-index: -1;
     transition: background 0.4s ease;
+}
+
+.habit-item,
+.checklist-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.6rem;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+[data-theme="dark"] .habit-item,
+[data-theme="dark"] .checklist-item {
+  background: rgba(0,0,0,0.25);
+}
+
+.habit-item:hover,
+.checklist-item:hover {
+  background: rgba(255,255,255,0.16);
+  transform: translateX(3px);
+}
+
+.streak {
+  background: rgba(255, 140, 0, 0.25);
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #ffae42;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+.time-display {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.date-display {
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+#countdown {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+#settings {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+#settings h3 {
+  margin-bottom: 0.5rem;
+}
+
+.color-palette {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#background-category {
+    display: flex;
+    flex-direction: column;
+}
+
+#bg-select {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.color-swatch {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border 0.2s ease;
+}
+
+.color-swatch:hover {
+  transform: scale(1.15);
+  border-color: var(--text-color);
+}
+
+button:hover , select:hover {
+    cursor: pointer;
+}
+
+input:hover {
+    cursor: text;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+section {
+    padding: 1.25rem;
+    
+}
+
+footer section {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#set-deadline {
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.5rem;
+  }
+
+  #set-deadline {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .left-column,
+  .right-column {
+    gap: 1.25rem;
+  }
+
+  .dashboard section {
+    /* width: 70%; */
+    width: fit-content;
+    margin: 0.75rem auto;
+    border-radius: 16px;
+    padding: 1rem 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .dashboard section {
+    padding-bottom: 1.5rem;
+  }
+
+  #countdown {
+    margin-bottom: 0;
+  }
+
+  #quote {
+    padding-bottom: 1rem;
+  }
+
+  ul {
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .time-display {
+    font-size: 1.9rem;
+  }
+
+  .date-display {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .habit-item,
+  .checklist-item {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .delete-habit,
+  .delete-task {
+    font-size: 1.25rem;
+  }
+
+  .streak {
+    font-size: 0.95rem;
+    padding: 0.35rem 0.7rem;
+  }
+
+  #settings {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  #settings > div {
+    width: 90%;
+  }
+
+  .background-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.35)
+    );
+  }
 }
