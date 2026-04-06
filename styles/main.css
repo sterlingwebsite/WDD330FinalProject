@@ -1,7 +1,8 @@
 :root {
     --accent-color: blue;
+    --accent-color-test: ;
     --bg-color: #ffffff;
-    --text-color: #222;
+    --text-color: #000000;
     --overlay-color: rgba(255, 255, 255, 0.35);
 }
 
@@ -33,7 +34,7 @@ h1, h2, h3 {
 }
 
 section {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.52);
     backdrop-filter: blur(12px);
     border-radius: 14px;
     padding: 1.5rem;
@@ -50,12 +51,16 @@ section:hover {
 }
 
 button, input, select {
-    accent-color: var(--accent-color);
+  accent-color: var(--accent-color);
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
 }
 
 .dashboard button {
   background: var(--accent-color);
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 0.6rem 1rem;
   border-radius: 8px;
@@ -124,11 +129,11 @@ button:active {
 }
 
 .streak {
-  background: rgba(255, 140, 0, 0.25);
+  background: var(--accent-color);
   padding: 0.25rem 0.6rem;
   border-radius: 8px;
   font-weight: 600;
-  color: #ffae42;
+  color: #ffffff;
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -225,6 +230,15 @@ footer h2 {
     margin: 0 auto;
 }
 
+header section {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 1rem;
+}
+
 .color-swatch {
     height: 20px;
     width: 20px;
@@ -248,7 +262,6 @@ input:hover {
 
 header h1 {
     text-align: center;
-    margin-top: 2.5rem;
 }
 
 section {
@@ -270,7 +283,31 @@ li {
     margin-left: 1.5rem;
 }
 
+header {
+  margin-top: 0.5rem;
+}
+
+img {
+  width: 40px;
+}
+
+header section {
+  display: flex;
+}
+
+.quote-text, .date-display {
+  font-size: 1.4rem;
+}
+
+.quote-text {
+  padding: 0 0.5rem;
+}
+
 @media (max-width: 768px) {
+  header {
+    margin: 0.5rem;
+  }
+
   .dashboard {
     grid-template-columns: 1fr;
     padding: 1rem 0.5rem;

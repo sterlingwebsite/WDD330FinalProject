@@ -26,7 +26,7 @@ async function fetchBackground(category) {
     if (!response.ok) throw new Error("Unsplash API error");
 
     const data = await response.json();
-    return data.urls.regular + "&w=900&q=60&fm=webp";
+    return data.urls.regular + "&w=800&q=60&fm=webp";
     // return data.urls.regular + "&q=60&auto=format"; // optional for quality instead of width
   } catch (err) {
     console.error("Background fetch failed:", err);

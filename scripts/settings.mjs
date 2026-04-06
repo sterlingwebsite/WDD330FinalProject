@@ -93,7 +93,7 @@ export function initSettings() {
     });
   }
 
-  const colors = ["blue", "green", "purple", "orange", "red"];
+  const colors = ["darkblue", "#004d00", "purple", "#6f3d00", "darkred"];
   colorOptions.innerHTML = `
     <h3>Accent Color</h3>
     <div class="color-palette">
