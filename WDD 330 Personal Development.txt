@@ -100,3 +100,6 @@ I finished doing the customization and settings. I changed the background image 
 I added a background overlay that adjusts with the dark/light mode selection. This makes the text/background contrast better.
 
 I added the option to match the light/dark theme to the user's system.
+
+4/6/2026
+I think I finished the development of my final project. I need to add github links and such, and record my video.

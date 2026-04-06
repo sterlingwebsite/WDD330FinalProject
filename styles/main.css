@@ -303,6 +303,17 @@ header section {
   padding: 0 0.5rem;
 }
 
+#links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+
+  & a {
+    /* text-decoration: none; */
+    color: var(--text-color);
+  }
+}
+
 @media (max-width: 768px) {
   header {
     margin: 0.5rem;
