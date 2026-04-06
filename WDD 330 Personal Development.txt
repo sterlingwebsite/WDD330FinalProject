@@ -103,3 +103,9 @@ I added the option to match the light/dark theme to the user's system.
 
 4/6/2026
 I think I finished the development of my final project. I need to add github links and such, and record my video.
+
+added links to footer.
+
+I'm working on my video now.
+
+Done with the video. Added the video link to my website.

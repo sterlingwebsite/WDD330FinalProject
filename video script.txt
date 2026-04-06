@@ -1,0 +1,49 @@
+video script
+
+Introduction 15 seconds
+
+(show face)
+name: Sterling Steele
+class: WDD330 Web Frontend Development 2
+Final Project: Productivity Dashboard
+
+(show screen share--project)
+Javascript code
+
+Third-party APIs
+background.mjs
+quotes.mjs
+time.mjs
+
+JSON
+quotes.mjs and data/quotes.json
+- returns objects
+unsplashAPI
+- objects containing many attributes
+- is the background image
+WorldTimeAPI
+- objects relating to time including datetime, day_of_week, and week_number
+Habits and Checklists
+- create JSON objects
+Settings
+- create JSON objects
+Show all JSON objects in DevTools Storage
+
+Advanced CSS
+background animation when screen loads
+transition from light/dark modes
+fire streak animation
+hover animation and color change
+
+Events
+habit check updates the streak counter
+checklist saves to json
+theme toggle light/dark mode
+background category change
+deadline setter
+
+LocalStorage
+3-5 properties
+
+Trello board
+click link to trello board
