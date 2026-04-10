@@ -86,7 +86,7 @@ I can only use images that are in webp format and less than 900 px wide to conse
 
 I spent some time merging branches on GitHub. It is quite difficult. I wonder if I can learn better ways for merging code in a team setting.
 
-3/31/2026
+Week 6 - 3/31/2026
 I'm still working on my FinalProject.
 
 I finished completing API Integration: WorldTimeAPI. I used RapidAPI worldtimeapi to complete it because it's supposedly faster and it gave me an api key I could use.
@@ -101,7 +101,7 @@ I added a background overlay that adjusts with the dark/light mode selection. Th
 
 I added the option to match the light/dark theme to the user's system.
 
-4/6/2026
+Week 7 - 4/6/2026
 I think I finished the development of my final project. I need to add github links and such, and record my video.
 
 added links to footer.
@@ -109,3 +109,5 @@ added links to footer.
 I'm working on my video now.
 
 Done with the video. Added the video link to my website.
+
+done with the skills assessment doc. submitted it.

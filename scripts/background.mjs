@@ -19,13 +19,32 @@ function BG_DATE_KEY(category) {
 async function fetchBackground(category) {
   console.log(`Fetching Unsplash image for category: ${category}`);
 
-  const url = `https://api.unsplash.com/photos/random?query=${category}&client_id=vkul2LB10bpKEeuM8I_NnzLQIuA7XxsLig3VexClEAA`;
+  const url = `https://api.unsplash.com/photos/random?query=${category}&orientation=landscape&client_id=vkul2LB10bpKEeuM8I_NnzLQIuA7XxsLig3VexClEAA`;
 
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Unsplash API error");
 
     const data = await response.json();
+
+    console.log("Full Unsplash Photo Object:", data);
+
+    const metadata = {
+      id: data.id,
+      created_at: data.created_at,
+      width: data.width,
+      height: data.height,
+      color: data.color,
+      description: data.description,
+      alt_description: data.alt_description,
+      photographer: data.user?.name,
+      camera: data.exif?.model,
+      location: data.location?.name,
+      tags: data.tags?.map(t => t.title)
+    };
+
+    console.log("Extracted Metadata:", metadata);
+
     return data.urls.regular + "&w=800&q=60&fm=webp";
     // return data.urls.regular + "&q=60&auto=format"; // optional for quality instead of width
   } catch (err) {
