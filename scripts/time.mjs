@@ -23,7 +23,28 @@ export async function fetchCurrentTime() {
     if (!response.ok) throw new Error("RapidAPI time error");
 
     const data = await response.json();
+
+    console.log("Full RapidAPI Time Object:", data);
+
+    const metadata = {
+      timezone: data.timezone,
+      abbreviation: data.abbreviation,
+      day_of_week: data.day_of_week,
+      day_of_year: data.day_of_year,
+      week_number: data.week_number,
+      dst: data.dst,
+      dst_offset: data.dst_offset,
+      raw_offset: data.raw_offset,
+      utc_offset: data.utc_offset,
+      unixtime: data.unixtime,
+      utc_datetime: data.utc_datetime,
+      client_ip: data.client_ip
+    };
+
+    console.log("Extracted Time Metadata:", metadata);
+
     return data.datetime;
+
   } catch (err) {
     console.error("RapidAPI time fetch failed:", err);
     return null;

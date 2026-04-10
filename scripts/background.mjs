@@ -40,10 +40,10 @@ async function fetchBackground(category) {
       photographer: data.user?.name,
       camera: data.exif?.model,
       location: data.location?.name,
-      tags: data.tags?.map(t => t.title)
+      tags: data.tags?.map((t) => t.title),
     };
 
-    console.log("Extracted Metadata:", metadata);
+    console.log("Extracted Background Metadata:", metadata);
 
     return data.urls.regular + "&w=800&q=60&fm=webp";
     // return data.urls.regular + "&q=60&auto=format"; // optional for quality instead of width
